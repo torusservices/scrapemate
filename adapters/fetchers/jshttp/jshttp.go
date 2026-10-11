@@ -295,7 +295,7 @@ func newBrowser(pw *playwright.Playwright, headless, disableImages bool, proxyPo
 		Args: []string{
 			`--start-maximized`,
 			`--no-default-browser-check`,
-			`--disable-dev-shm-usage`,
+			// `--disable-dev-shm-usage`, #disabled because it causes bugs keep this on our fork
 			`--no-sandbox`,
 			`--disable-setuid-sandbox`,
 			`--no-zygote`,
